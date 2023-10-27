@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+   
+}
+.board{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    height: 500px;
+    width: 500px;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.cell{
+    font-size: 3rem;
+    background-color: white;
+    text-align: center; /* Center text horizontally */
+    display: flex;
+    justify-content: center; /* Center text vertically */
+    align-items: center; /* Center text vertically */
+    height: 100%; /* Add this to make sure the cell occupies its entire height */
+    cursor: pointer;
+}
+
+.board :nth-child(1){
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+
+}
+.board :nth-child(2){
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+
+}
+.board :nth-child(3){
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+
+}
+.board :nth-child(4){
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    
+}
+
+.board :nth-child(5){
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    
+}
+.board :nth-child(6){
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+}
+
+.board :nth-child(7){
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+.board :nth-child(8){
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+   
+}
+.board :nth-child(9){
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+
+}
+
+.message,h1,label{
+    color: white;
+}
